@@ -8,4 +8,9 @@ function generate(length = 8){
 
     var password = " ";
 
+    for (var i = 0; i < length; i++) {
+        var character = Math.floor(Math.random() * all.length);
+        password += all.substring(character, character +1);
+    }
+    return password
 }
